@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task-2 Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Task-2 Web Development Project</h1>
+
+<!-- CONTACT FORM -->
+<h2>Contact Form</h2>
+
+<form onsubmit="return validateForm()">
+
+<input type="text" id="name" placeholder="Enter Name">
+<input type="email" id="email" placeholder="Enter Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<p id="error"></p>
+
+<hr>
+
+<!-- TODO LIST -->
+<h2>To-Do List</h2>
+
+<input type="text" id="taskInput" placeholder="Enter Task">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
