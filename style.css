@@ -1,26 +1,42 @@
 body{
-    background-color:#f2f2f2;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
     text-align:center;
+    background:#f2f2f2;
 }
 
-h1{
-    color:darkblue;
-}
-
-p{
-    font-size:18px;
+input, textarea{
+    display:block;
+    margin:10px auto;
+    padding:10px;
+    width:250px;
 }
 
 button{
     padding:10px 20px;
-    background-color:blue;
+    background:blue;
     color:white;
     border:none;
-    border-radius:5px;
     cursor:pointer;
 }
 
 button:hover{
-    background-color:darkblue;
+    background:darkblue;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    background:white;
+    margin:5px;
+    padding:10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width:600px){
+    body{
+        background:#ddd;
+    }
 }

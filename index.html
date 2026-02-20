@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+<title>Task-2 Project</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Welcome to My Website</h1>
+<h1>Task-2 Web Development Project</h1>
 
-<p>Trying period going on..</p>
+<!-- CONTACT FORM -->
+<h2>Contact Form</h2>
 
-<!-- Image 1 -->
-<a href="https://google.com" target="_blank">Visit Google</a>
+<form onsubmit="return validateForm()">
 
-<br><br>
+<input type="text" id="name" placeholder="Enter Name">
+<input type="email" id="email" placeholder="Enter Email">
 
-<button onclick="showMessage()">Click Me</button>
+<textarea placeholder="Message"></textarea>
 
-<br><br>
+<button type="submit">Submit</button>
 
-<!-- Image 2 -->
-<img src="https://picsum.photos/200" alt="image">
+</form>
 
-<!-- ✅ VERY IMPORTANT -->
+<p id="error"></p>
+
+<hr>
+
+<!-- TODO LIST -->
+<h2>To-Do List</h2>
+
+<input type="text" id="taskInput" placeholder="Enter Task">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
 <script src="script.js"></script>
 
 </body>
-
 </html>
