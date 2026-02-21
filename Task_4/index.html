@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>My Portfolio Website</h1>
+
+<!-- ABOUT -->
+<section>
+<h2>About Me</h2>
+<p>I am a Web Development Intern learning HTML, CSS & JavaScript.</p>
+</section>
+
+<hr>
+
+<!-- PROJECTS -->
+<section>
+<h2>Projects</h2>
+<ul>
+<li>Task Manager</li>
+<li>API Project</li>
+<li>Portfolio Website</li>
+</ul>
+</section>
+
+<hr>
+
+<!-- TODO APP -->
+<h2>Task Manager (LocalStorage)</h2>
+
+<input id="taskInput" placeholder="Enter task">
+<button onclick="addTask()">Add</button>
+
+<ul id="taskList"></ul>
+
+<hr>
+
+<!-- PRODUCT FILTER -->
+<h2>Product Filter</h2>
+
+<select onchange="filterProducts(this.value)">
+<option value="all">All</option>
+<option value="tech">Tech</option>
+<option value="book">Books</option>
+</select>
+
+<div id="products"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
